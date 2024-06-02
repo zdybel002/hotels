@@ -1,0 +1,584 @@
+:root {
+  --main-color: #cc9933;
+  --main-font-size: 16px;
+  --main-font-family: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sectionHeading {
+  margin-left: 40px;
+  margin-bottom: 25px;
+  font-family: Muller;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* header */
+.headerContainer {
+  margin-bottom: 75px;
+}
+.headerUp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.containerLogo {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 40px;
+}
+.headerNumber {
+  font-size: 20px;
+  display: block;
+  color: #666666;
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+/* Pasek nav  */
+
+.headerDown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 45px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.navList {
+  display: flex;
+}
+.navListItem:not(:last-child) {
+  margin-right: 25px;
+}
+.navListLink {
+  font-size: var(--main-font-size);
+  color: #666666;
+}
+.navButtons {
+  display: flex;
+}
+
+.btm {
+  display: inline-block;
+  background-color: #fff;
+  padding: 13px 20px;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+}
+.btm_header_config:not(:last-child) {
+  margin-right: 65px;
+}
+.btm {
+  transition: background-color 0.3s cubic-bezier(0.04, 0.99, 0.83, 0.67);
+}
+.btm:hover {
+  background-color: #cc9933;
+  color: white;
+}
+.btm:active {
+  background-color: #a47312;
+  color: white;
+}
+
+.accaunt_icon {
+  margin-right: 5px;
+}
+.accaunt_link {
+  color: var(--main-color);
+}
+
+/* hero section */
+
+.sectionHero {
+  margin-bottom: 70px;
+}
+
+.sectinHeroList {
+  display: flex;
+}
+.sectinHeroTwoRectagls {
+  margin-right: 25px;
+}
+.sectionHeroSmallRectagle {
+  display: block;
+  padding: 40px 48px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+  background-color: transparent;
+  height: 258px;
+  width: 573px;
+  border-radius: 15px;
+  color: #fff;
+}
+.ReactagleOne {
+  height: 258px;
+  width: 573px;
+  position: absolute;
+  background-image: url(img/Rectangle\ 114.png);
+}
+.ReactagleTwo {
+  background-image: url(img/Rectangle\ 2.png);
+  transform: translateY(285px);
+  height: 258px;
+  width: 573px;
+}
+.RectagleTree {
+  padding-top: 195px;
+  height: 540px;
+  width: 573px;
+  background-image: url(img/33\ 1.jpg);
+}
+.reaktagleHeading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  margin-bottom: 17px;
+}
+.bigReaktagleHeading {
+  margin: 0;
+  font-size: 60px;
+  margin-bottom: 17px;
+}
+.reaktagleDesription {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.reaktagleLink {
+  color: var(--main-color);
+  font-size: 16px;
+}
+.reaktagle_link_item {
+  margin-left: 5px;
+  transform: translateY(5px);
+}
+
+/* section About Us */
+
+.sectionAboutUs {
+  margin-bottom: 85px;
+}
+.sectionAboutHeading {
+  margin-bottom: 35px;
+  font-family: Muller;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.sectionAboutUsDesription {
+  width: 888px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* section services */
+.sectionServices {
+  margin-bottom: 70px;
+}
+
+.sectionServicesList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sectionServicesItem {
+  /* padding: 38px; */
+  max-width: 572px;
+  min-height: 100px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 22px;
+}
+.sectionServicesItem:nth-child(2n + 1) {
+  margin-right: 25px;
+}
+.sectionServiceContent {
+  width: 492px;
+  padding: 38px;
+}
+.SectionServiceHeading {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #cc9933;
+}
+.sectionServicesDesription {
+  margin: 0;
+  font-family: Muller;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.SectionServiceHeadingIcon {
+  margin-left: 5px;
+  transform: translateY(4px);
+}
+
+/* section Advatage */
+
+.sectionAdvatageList {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.sectionAdvatageItem {
+  padding: 45px;
+  height: 276px;
+  width: 276px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.sectionAdvantageDesription {
+  font-family: Muller;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.sectionAdvatageIcon {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 65px;
+  height: 61px;
+}
+.sectionAdvatageIconBath {
+  background-image: url(img/bathtub.svg);
+}
+.sectionAdvatageIconHanger {
+  background-image: url(img/hanger.svg);
+}
+.sectionAdvatageIconHeating {
+  background-image: url(img/heating.svg);
+}
+.sectionAdvatageIconHotel {
+  background-image: url(img/hotel-key.svg);
+}
+
+/* section Acomodation */
+
+.sectionAcamodationList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.sectionAcamodation.sectionAcamodationList:not(:last-child) {
+  margin-bottom: 25px;
+}
+.sectionAcamodationItem {
+  min-width: 374px;
+  height: 450px;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-bottom: 24px;
+}
+.sectionAcomodationContent {
+  margin-top: 30px;
+  padding-left: 45px;
+  padding-bottom: 45px;
+}
+.sectionAcomodationPrice {
+  margin-right: 50px;
+  margin-bottom: 15px;
+  color: #999999;
+  transform: translateY(-5px);
+}
+.sectionAcomodationName {
+  margin-bottom: 20px;
+}
+.sectionAcomodationCity {
+  margin-bottom: 20px;
+  color: #999999;
+}
+.sectinAcomodationBtm {
+  display: inline-block;
+  padding: 15px 22px;
+  background-color: #fff;
+  color: #d8b265;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #d8b265;
+}
+.sectionAcamodationBackground {
+  padding: 45px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: end;
+  background-image: url(img/Nowy\ folder/41.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+}
+.sectionAcomodationOffer {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.acomodation_price {
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+}
+.acomodation_nights {
+  color: black;
+  font-weight: 300;
+}
+.sectionAcomodationBlockPrice {
+  display: flex;
+}
+.sectionAcomodationOfferIcon {
+  margin-left: 10px;
+  transform: translateY(-8px);
+}
+
+/* section Form */
+
+.section_form {
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+.container_form {
+  background-color: #e9e9e9;
+  padding: 50px 50px;
+  border-radius: 15px;
+}
+.form {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 30px 30px;
+}
+
+.sectionFormList {
+  width: 970px;
+  display: flex;
+  justify-content: center;
+}
+.sectionFormItem:not(:last-child) {
+  margin-right: 120px;
+}
+.labes_descrips {
+  display: flex;
+}
+select {
+  transform: translateX(-4px);
+}
+.input_form {
+  border: none;
+}
+.inputs_div {
+  margin-bottom: 10px;
+}
+
+.footer {
+  height: 200px;
+}
+.inputs_label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: left;
+}
+
+/* section CONTACTS */
+.section_contact {
+  margin-bottom: 40px;
+}
+.container_contacts {
+  background-color: #fff;
+  padding: 45px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact_left_mini_block {
+  width: 380px;
+  display: flex;
+  border-bottom: 2px solid #e9e9e9;
+  padding-bottom: 23px;
+}
+.contact_left_mini_block:not(:last-child) {
+  margin-bottom: 25px;
+}
+.mini_block_headings {
+  width: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  color: black;
+  margin-right: 90px;
+}
+
+.adress_value {
+  width: 229px;
+  line-height: 24px;
+}
+.phone_value,
+.phone_links {
+  color: #cc9933;
+}
+.values_emeil_item:not(last-child) {
+  margin-bottom: 7px;
+}
+.phone_description {
+  color: #999;
+}
+.plan_description {
+  line-height: 24px;
+}
+
+.btm_contacts {
+  margin-top: 45px;
+  padding: 27px 29px;
+}
+/* footer */
+.footer {
+  margin-bottom: 15px;
+}
+.container_footer {
+  padding: 45px;
+  background-color: #333333;
+  border-radius: 15px;
+  display: flex;
+}
+
+/* colum left  */
+.leftColumn {
+  width: 330px;
+  margin-right: 125px;
+}
+.leftColum_copyright,
+.leftColum_info,
+.center_street {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30.4px;
+  text-align: left;
+  color: white;
+}
+.leftColum_copyright {
+  margin-bottom: 37px;
+}
+.leftColum_info {
+  margin-bottom: 40px;
+}
+.leftColum_agree {
+  color: #cc9933;
+}
+
+/* column center  */
+.column_center {
+  position: relative;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.footer_center_img {
+  position: absolute;
+  width: 250px;
+  right: 0;
+  bottom: -45px;
+}
+.center_street {
+  margin-bottom: 15px;
+}
+.center_link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #cc9933;
+}
+.center_meil_margin {
+  margin-top: 15px;
+}
+
+/* column rigth  */
+.column_right {
+  width: 177px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.social_link {
+  display: block;
+  margin-bottom: 20px;
+}
